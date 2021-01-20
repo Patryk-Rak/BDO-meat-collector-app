@@ -48,8 +48,10 @@ def get_gathering_history():
     database_label["text"] = meats
 
 app = Tk()
+app.title("BDO Meat Collector")
+app.iconphoto(False, PhotoImage(file="images\\cleaver-icon.png"))
 app.geometry("1050x550")
-image = ImageTk.PhotoImage(Image.open("C:\\Users\\Patryk Rak\\Desktop\\Programming Languages\\Python\\.Coding\\First Project\\gathering_database_background.png"))
+image = ImageTk.PhotoImage(Image.open("images\\gathering_database_background.png"))
 
 tabs_control = ttk.Notebook(app)
 tabs_control.pack(pady=15)
@@ -67,7 +69,7 @@ tabs_control.add(alarm_tab, text="Alarm")
 tabs_control.add(data_tab, text="Data")
 
 
-filename = PhotoImage(file="C:\\Users\\Patryk Rak\\Desktop\\Programming Languages\\Python\\.Coding\\First Project\\gathering_database_background.png")
+filename = PhotoImage(file="images\\gathering_database_background.png")
 main_label = Label(main_tab, image=filename)
 main_label.place(x=0, y=0, relwidth=1, relheight=1)
 
